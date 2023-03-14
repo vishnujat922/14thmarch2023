@@ -1,6 +1,5 @@
 //1. Import Area
 import React, { useEffect, useState } from 'react'
-import URL from './helper/URL';
 //2. Definition Area
 export default function Home() {
     //2.1 Hooks Area
@@ -31,8 +30,8 @@ export default function Home() {
                 {
                     businessCategory.map((cv, idx, arr) => {
                         return <li key={idx} className="me-3">
-                            <a href="#">
-                                <img src={'http://localhost:1337' + cv.attributes.image.data.attributes.url} alt='' /><br />
+                            <a href="#top">
+                                <img src={'http://localhost:1337' + cv.attributes.image.data.attributes.url} alt='img' /><br />
                                 {cv.attributes.name}
                             </a>
                         </li>
