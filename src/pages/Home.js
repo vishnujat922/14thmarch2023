@@ -32,7 +32,7 @@ export default function Home() {
                     businessCategory.map((cv, idx, arr) => {
                         return <li key={idx} className="me-3">
                             <a href="#">
-                                <img src={'http://localhost:1337' + cv.attributes.image.data.attributes.url} /><br />
+                                <img src={'http://localhost:1337' + cv.attributes.image.data.attributes.url} alt='' /><br />
                                 {cv.attributes.name}
                             </a>
                         </li>

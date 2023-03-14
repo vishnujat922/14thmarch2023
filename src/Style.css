@@ -8,6 +8,8 @@ header{
 main{
     height:1000px;
     border:1px dashed green;
+    padding: 20px;
+
 }
 footer{
     height:20px;
