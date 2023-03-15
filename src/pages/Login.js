@@ -10,6 +10,7 @@ export default function Login() {
     //2.3 Return Statement
     return (
         <>
+            <h1 className='text-center'>Login Page</h1>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
