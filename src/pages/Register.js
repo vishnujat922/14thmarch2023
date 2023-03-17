@@ -16,7 +16,6 @@ export default function Register() {
     console.log(e);
     console.log(p);
 
-
     console.log(payload);
     //Promise Chain
     fetch(`http://localhost:1337/api/auth/local/register`, {
@@ -40,7 +39,6 @@ export default function Register() {
        } 
       })
       .catch(err => err)
-
   }
   //2.3 Return Statement
   return (
@@ -52,7 +50,6 @@ export default function Register() {
                     <Form.Label>UserName</Form.Label>
                     <Form.Control name="username" type="text" placeholder="Enter username" />
                     <Form.Text className="text-muted">
-                        
                     </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3">

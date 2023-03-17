@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Detail from './pages/Detail'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import BusinessRegister from "./pages/BusinessRegister"
 import LayOuts from './pages/LayOuts'
 //2. Definition Area
 export default function App() {
@@ -22,6 +23,10 @@ export default function App() {
                   <Route path='detail' element={<Detail />}></Route>
                   <Route path='login' element={<Login />}></Route>
                   <Route path='register' element={<Register />}></Route>
+                  { window.localStorage.getItem('jwt_token')!== undefined &&
+                 
+                  <Route path='business_register' element={<BusinessRegister />}></Route>
+                  }
                 </Route>
             </Routes>
         </BrowserRouter>
